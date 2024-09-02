@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('fondohologram.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .marketplace {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+           
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+
+
+.card {
+    width: 150px; /* Ancho fijo para todas las tarjetas */
+    height: 250px; /* Alto fijo para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: rotateY(360deg);
+}
+
+        .card img {
+            max-width: 100px;
+            border-radius: 10px;
+        }
+
+        .card p {
+            margin: 10px 0 0;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer zoom */
+        }
+    </style>
+</head>
+<body>
+    <section class="marketplace">
+        <div class="card">
+            <img src="app1.jpeg">
+            <p>Juegos</p>
+        </div>
+        <div class="card">
+            <img src="app2.jpeg">
+            <p>IA Hologram</p>
+        </div>
+        <div class="card">
+            <img src="app3.jpeg">
+            <p>Curso Whatsapp Marketer</p>
+        </div>
+    </section>
+</body>
+</html>
